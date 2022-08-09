@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            text-align: center;
+        }
+
+        table, th, tr, td {
+            position: static;
+            border: 1px solid black;
+        }
+
+        /*#main tr td button {*/
+        /*    position: absolute;*/
+        /*    top: auto;*/
+        /*    right: 5px;*/
+        /*}*/
+        #main tr {
+            position: static;
+            width: 450px;
+            background-color: cornflowerblue;
+        }
+
+        #main_id tr {
+            background-color: aquamarine;
+        }
+
+        #main_id tr th {
+            background-color: gold;
+        }
+
+        #main_id2 tr {
+            background-color: aquamarine;
+        }
+
+        #main_id2 tr th {
+            background-color: gold;
+        }
+
+        #main tr td button {
+            position: relative;
+            left: 130px;
+        }
+
+        #AdminUI th {
+            background-color: cornflowerblue;
+        }
+
+        #AdminUI tr td {
+            background-color: orange;
+        }
+
+        #UserUI th {
+            background-color: cornflowerblue;
+        }
+
+        #UserUI tr td {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+<h2> D조 도서실 도서 업무 전산 시스템 <img src="../Image/img.png" alt="펭귄" width="100" height="100"/></h2>
+<form>
+    <table id="main">
+        <tr>
+            <td align="center" colspan="2" style="width: 450px">
+                D조 도서실 도서 업무 전산 시스템
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table id="main_id" align="center">
+                    <tr><input type="radio" name="choice" checked="checked"> 관리자
+                        <input type="radio" name="choice"> 일반 대출자
+                        <br/><br/>
+                            <th> 아이디</th>
+                            <td style="width: 300px"><input type="text" placeholder="입력 해주세요"></td>
+                            <td align="center" rowspan="2"><input type="button" value="Login"></td>
+                    </tr>
+                    <tr>
+                        <th> 비밀번호</th>
+                        <td style="width: 300px;"><input type="text"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>로그인 해주시기 바랍니다.</td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    신규 회원 등록
+                    <button name="button1"> 회원 가입</button>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    신규 도서 등록
+                    <button name="button1"> 도서 등록</button>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <br/><br/><br/>
+    <!-- 관리자 UI -->
+    <table id="AdminUI">
+        <tr>
+            <th colspan="3" align="center"> 관리자</th>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"> 500건의 대출 자료 생성 하기</td>
+            <td align="center"><input type="button" align="center" value="선택"></td>
+        </tr>
+        <tr>
+            <td> 대출 이용현황 조회</td>
+            <td><select name="선택">
+                <option selected="selected"> 1. 대출 도서 상위 정보 검색</option>
+                <option> 2. 대출자 상위 정보 검색</option>
+                <option> 3. 대출 기간이 가장 짧은 도서 검색</option>
+                <option> 4. 대출반납이 가장 빠른 학생 검색</option>
+                <option> 5. 대출을 가장 많이 하는 학과 검색</option>
+                <option> 6. 대출반납이 가장 늦은 학과 검색</option>
+                <option> 7. 가장 인기있는 책의 저자 검색</option>
+                <option> 8. 사용자의 연체 횟수를 검색</option>
+            </select></td>
+            <td align="center"><input type="button" align="center" value="선택"></td>
+        </tr>
+    </table>
+    <br/><br/><br/>
+    <!-- 관리자 UI -->
+    <table id="UserUI">
+        <tr>
+            <th colspan="2" align="center"> 회원</th>
+        </tr>
+        <tr>
+            <td align="center"> 일반 회원 대출</td>
+            <td align="center"><input type="button" align="center" value="선택"></td>
+        </tr>
+        <tr>
+            <td align="center"> 대출 현황 조회</td>
+            <td align="center"><input type="button" align="center" value="선택"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

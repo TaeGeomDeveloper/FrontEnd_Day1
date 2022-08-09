@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FormTest</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        #list tr {
+            background-color: cornflowerblue;
+        }
+
+        #list tr th {
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+<a href="../welcome.html"> 돌아가기 </a> <br/><br/>
+<img src="../Image/img.png" alt="펭귄" width="250" height="250"/>
+<h2> 자기 소개서 양식 </h2>
+<form>
+    <table id="list">
+        <tr>
+            <th style="width: 100px" align="center"> 아이디</th>
+            <td><input type="text" placeholder="입력 해주세요" value="admin" readonly="readonly"></td>
+            <td align="center"><input type="button" value="ID Check"></td>
+        </tr>
+        <tr>
+            <th align="center"> 비밀번호</th>
+            <td><input type="text"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th align="center">언어</th>
+            <td><input type="radio" name="choice" checked="checked"> One
+                <input type="radio" name="choice"> Two
+                <input type="radio" name="choice"> Three
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <th align="center">Tools</th>
+            <td><input type="checkbox" name="tools" checked="checked"> A
+                <input type="checkbox" name="tools"> B
+                <input type="checkbox" name="tools"> C
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <th align="center">선택</th>
+            <td><select name="선택">
+                <option selected="selected"> One</option>
+                <option> Two</option>
+                <option> Three</option>
+            </select></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td><input type="hidden" name="key" value="1234"></td>
+            <td><input type="hidden" name="is_check" value="true"></td>
+        </tr>
+        <tr>
+            <th align="center">버튼</th>
+            <td>
+                <button><img src="../Image/button.png" alt="버튼" width="20" height="20"></button>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <th align="center"> 자기소개</th>
+            <td colspan="2">
+                <textarea rows="5" cols="40"> default
+                </textarea>
+            </td>
+        </tr>
+        <tr>
+            <th></th>
+            <td></td>
+            <td align="center"><input type="Submit"></td>
+        </tr>
+
+    </table>
+</form>
+</body>
+</html>
